@@ -1,0 +1,95 @@
+@color_danger: #CC3F3B;
+@color_warning: #EFA63F;
+@color_info: #4FBBDB;
+@color_success: #55AF55;
+@color_primary: #3073AD;
+@color_text: #333333;
+@color_background: #EEEEEE;
+@color_background_light: #FBFBFB;
+aside, article {
+  display: block;
+}
+* {margin: 0px; padding: 0px;}
+a {
+  text-decoration: none;
+}
+#wrapper {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  color: @color_text;
+  position: relative;
+  //border: 1px double @color_danger;
+
+  aside {
+    float: left;
+    width: 280px;
+    //background-color: @color_background_light;
+
+    h3 {
+      color: @color_primary;
+      background-color: @color_background;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 10px;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+
+    ul li {
+      list-style: none;
+      background-color: @color_background_light;
+      line-height: 40px;
+      font-size: 14px;
+      border-radius: 5px;
+
+      a {
+        color: @color_primary;
+        padding: 10px 120px 10px 10px;
+      }
+    }
+
+    ul li:hover {
+      background-color: @color_background;
+    }
+  }
+  article {
+    float: left;
+    width: 700px;
+    margin-left: 20px;
+  }
+  h1 {
+    color: @color_danger;
+  }
+  table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+
+    th, td {
+      font-weight: normal;
+    }
+
+    thead tr th {
+      color: @color_primary;
+
+      a {
+        text-decoration: none;
+        color: @color_primary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    tbody td a {
+      text-decoration: none;
+      color: @color_primary;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
